@@ -1,0 +1,80 @@
+.timer-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.timer-wrapper .container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.timer-wrapper .controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+.timer-wrapper #datetime-picker {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 220px;
+  transition:
+    border-color 0.3s,
+    opacity 0.3s;
+}
+.timer-wrapper #datetime-picker:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.timer-wrapper button[data-start] {
+  padding: 10px 25px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s;
+}
+.timer-wrapper button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+.timer-wrapper button[data-start]:not(:disabled):hover {
+  background-color: #3b5fd9;
+}
+.timer-wrapper .timer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.timer-wrapper .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer-wrapper .value {
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.timer-wrapper .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #666;
+}
